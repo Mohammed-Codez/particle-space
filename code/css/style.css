@@ -1,0 +1,32 @@
+body {
+        margin: 0;
+        overflow: hidden;
+        color: white;
+}
+
+#canvas {
+        border: 1px black solid;
+        background: black;
+        z-index: 0;
+}
+
+#sidebar {
+        position: absolute;
+        background-color: #0000ff50;
+        z-index: 1;
+        top: 0;
+        translate: 1px 1px;
+        width: clamp(300px, 25dvw, 400px);
+        height: calc(100dvh - 42px);
+        padding: 20px;
+        overflow-y: auto;
+}
+
+
+#menu-button {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        translate: -15px 15px;
+}

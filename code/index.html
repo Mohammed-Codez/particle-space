@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Particle Space</title>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        
+        <div id="sidebar">
+                <h1 id="title">Particle Space</h1>
+
+                <hr>
+
+                <div id="value-editor">
+                        <!-- Sim Info -->
+                        <p><strong>Simulation Info</strong></p>
+
+                        <div id="grav-editor">
+                                <label for="grav-const">gravity constant:</label>
+                                <input type="number" name="grav-const" id="grav-const" value="0.1" min="-5" max="5" step="0.01">
+                        </div>
+
+                        <div id="fric-editor">
+                                <label for="fric-const">friction (INDEV):</label>
+                                <input type="number" name="fric-const" id="fric-const" value="0.998" min="0" max="1" step="0.001">
+                        </div>
+
+                        <div id="collrad-editor">
+                                <label for="collrad-const">collision radius:</label>
+                                <input type="number" name="collrad-const" id="collrad-const" value="1" min="0.1" max="5" step="0.01">
+                        </div>
+
+                        <hr>
+
+                        <!-- Camera Settings -->
+                        <p><strong>Camera Info</strong></p>
+
+                        <div id="zoom-value">
+                                <label id="zoom-const">friction:</label>
+                        </div>
+                        <div id="campos-value">
+                                <label id="cam-pos">camera position:</label>
+                        </div>
+
+                        <hr>
+
+                        <!-- Draw Type -->
+                        <p><strong>Draw Type</strong></p>
+                        <div id="draw-type-val">
+                                <label for="draw-type">draw type:</label>
+                                <select name="draw-type" id="draw-type">
+                                        <option value="color" selected="selected">color</option>
+                                        <option value="dynamic">dynamic</option>
+                                </select>
+                                <p>Note: the "dynamic" mode does the following to color the atoms:</p>
+                                <ul>
+                                        <li>black: light, slow</li>
+                                        <li>blue: heavy, slow </li>
+                                        <li>red: light, fast </li>
+                                        <li>magenta: heavy, fast </li>
+                                </ul>
+                        </div>
+                        <div id="outline-val">
+                                <label for="outline">outline:</label>
+                                <input type="checkbox" name="outline" id="outline" checked="checked">
+                        </div>
+                </div>
+        </div>
+
+        <div id="menu-button">
+                <label for="menu-toggle">menu: </label>
+                <input type="checkbox" name="menu-toggle" id="menu-toggle" checked="true">
+        </div>
+
+        <script src="scripts/script.js"></script>
+</body>
+</html>
