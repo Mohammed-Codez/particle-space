@@ -9,7 +9,7 @@ This space simulator uses atoms that are predefined in code as a list. This docu
 
 ## Versions
 
-- **April 24th Thu, 2025 - v1.0** — Just released
+- **April 25th Fri, 2025 - v1.0** — Just released
 
 ## Controls
 
