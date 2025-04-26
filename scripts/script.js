@@ -193,8 +193,8 @@ ogAtoms.push(...[...Array(500)].map(() => {
         let randRad = Math.random() * maxRad
         let circPos = Math.random() * 2 * Math.PI
 
-        let randX = Math.sin(circPos) * (Math.sin(5 * circPos) + 5) / 6
-        let randY = Math.cos(circPos) * (Math.sin(5 * circPos) + 5) / 6
+        let randX = Math.sin(circPos) * (Math.sin(5 * circPos) + 5) / 6 
+        let randY = Math.cos(circPos) * (Math.sin(5 * circPos) + 5) / 6 
 
         return new Atom(
                 randX,
