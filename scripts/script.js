@@ -202,7 +202,7 @@ ogAtoms.push(...[...Array(500)].map(() => {
                 Math.random() * 9 + 1,
                 Math.sin(circPos + Math.PI / 2) * randRad / 5,
                 Math.cos(circPos + Math.PI / 2) * randRad / 5,
-                colors[i2
+                colors[2]
         )
 }))
 
