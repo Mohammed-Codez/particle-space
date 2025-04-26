@@ -5,7 +5,7 @@
 
 This space simulator uses atoms that are predefined in code as a list. This documentation will show how to use it, as well as some tricks that will be implemented. For now, there will only be a few tricks.
 
-**NOTE:** I'm just an indie guy who likes making silly projects for fun. It's not meant for research on space as there are unreal circumstances like atoms having a weight of 1 something.
+**NOTE:** I'm just an indie guy who likes making silly projects for fun. It's not meant for research on space as there are unreal circumstances like atoms having a weight of 1 something. And also, I didn't put up the website, so keep in mind that the source code is available, not the website.
 
 ## Versions
 
