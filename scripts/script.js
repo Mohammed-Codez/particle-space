@@ -188,25 +188,23 @@ const colors = [
 
 let ogAtoms = []
 
-for (let i = 0; i < colors.length; i++) {
-        ogAtoms.push(...[...Array(100)].map(() => {
-                let maxRad = 15
-                let randRad = Math.random() * maxRad
-                let circPos = Math.random() * 2 * Math.PI
+ogAtoms.push(...[...Array(500)].map(() => {
+        let maxRad = 15
+        let randRad = Math.random() * maxRad
+        let circPos = Math.random() * 2 * Math.PI
 
-                let randX = Math.sin(i / 10 * 2 * Math.PI) + Math.sin(circPos) * Math.log(randRad) * maxRad
-                let randY = Math.cos(i / 10 * 2 * Math.PI) + Math.cos(circPos) * Math.log(randRad) * maxRad
+        let randX = Math.sin(i / 10 * 2 * Math.PI) + Math.sin(circPos) * Math.log(randRad) * maxRad
+        let randY = Math.cos(i / 10 * 2 * Math.PI) + Math.cos(circPos) * Math.log(randRad) * maxRad
 
-                return new Atom(
-                        randX,
-                        randY,
-                        Math.random() * 9 + 1,
-                        Math.sin(circPos + Math.PI / 2) * randRad / 5,
-                        Math.cos(circPos + Math.PI / 2) * randRad / 5,
-                        colors[i]
-                )
-        }))
-}
+        return new Atom(
+                randX,
+                randY,
+                Math.random() * 9 + 1,
+                Math.sin(circPos + Math.PI / 2) * randRad / 5,
+                Math.cos(circPos + Math.PI / 2) * randRad / 5,
+                colors[i]
+        )
+}))
 
 let atoms = ogAtoms
 
