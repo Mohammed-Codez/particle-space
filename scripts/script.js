@@ -194,8 +194,8 @@ ogAtoms.push(...[...Array(500)].map(() => {
         let circPos = Math.random() * 2 * Math.PI
 
         let points = 5
-        let randX = Math.cos(circPos) * (Math.sin(points * circPos) + 4) / 5
-        let randY = Math.sin(circPos) * (Math.sin(points * circPos) + 4) / 5
+        let randX = (Math.cos(circPos) * (Math.sin(points * circPos) + 4) / 5) * randRad
+        let randY = (Math.sin(circPos) * (Math.sin(points * circPos) + 4) / 5) * randRad
 
         return new Atom(
                 randX,
