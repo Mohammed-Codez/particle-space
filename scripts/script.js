@@ -188,9 +188,9 @@ const colors = [
 
 let ogAtoms = []
 
-ogAtoms.push(...[...Array(500)].map(() => {
+ogAtoms.push(...[...Array(500)].map((i) => {
         let maxRad = 15
-        let randRad = Math.log(Math.random() * maxRad) * maxRad
+        let randRad = Math.log(i * maxRad) * maxRad
         let circPos = Math.random() * 2 * Math.PI
 
         let randX = (Math.sin(circPos) * (Math.sin(5 * circPos) + 2.5) / 3.5) * randRad
