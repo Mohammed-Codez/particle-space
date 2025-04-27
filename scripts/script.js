@@ -189,7 +189,7 @@ const colors = [
 let ogAtoms = []
 
 ogAtoms.push(...[...Array(500)].map(() => {
-        let maxRad = 100
+        let maxRad = 25
         let randRad = Math.random() * maxRad
         let circPos = Math.random() * 2 * Math.PI
 
