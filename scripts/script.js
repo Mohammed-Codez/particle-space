@@ -190,7 +190,7 @@ let ogAtoms = []
 
 ogAtoms.push(...[...Array(500)].map(() => {
         let maxRad = 50
-        let randRad = Math.random() * maxRad
+        let randRad = Math.random() * (Math.log(maxRad) / Math.log(maxRad)) * maxRad
         let circPos = Math.random() * 2 * Math.PI
 
         let randX = (Math.sin(circPos) * (Math.sin(5 * circPos) + 5) / 6) * randRad
