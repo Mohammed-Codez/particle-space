@@ -229,7 +229,7 @@ ogAtoms.push(...[...Array(250)].map(() => {
 
 // ring 2
 ogAtoms.push(...[...Array(250)].map(() => {
-        let maxRad = 100
+        let maxRad = 200
         let randRad = Math.random() * 50 + maxRad
         let circPos = Math.random() * 2 * Math.PI
 
