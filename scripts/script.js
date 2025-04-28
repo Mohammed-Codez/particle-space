@@ -210,9 +210,9 @@ ogAtoms.push(...[...Array(500)].map(() => {
 
 // ring 1
 ogAtoms.push(...[...Array(240)].map(() => {
-        let maxRad = 250
+        let maxRad = 350
         let randRad = Math.random() * 25 + maxRad
-        let circPos = Math.random() * 2 * Math.PI
+        let circPos = Math.random() * 20 * Math.PI
 
         let randX = Math.sin(circPos) * randRad
         let randY = Math.cos(circPos) * randRad
@@ -229,9 +229,9 @@ ogAtoms.push(...[...Array(240)].map(() => {
 
 // ring 2
 ogAtoms.push(...[...Array(240)].map(() => {
-        let maxRad = 300
+        let maxRad = 550
         let randRad = Math.random() * 25 + maxRad
-        let circPos = Math.random() * 2 * Math.PI
+        let circPos = Math.random() * 20 * Math.PI
 
         let randX = Math.sin(circPos) * randRad
         let randY = Math.cos(circPos) * randRad
