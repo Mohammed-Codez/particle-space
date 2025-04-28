@@ -209,9 +209,9 @@ ogAtoms.push(...[...Array(500)].map(() => {
 }))
 
 // ring 1
-ogAtoms.push(...[...Array(50)].map(() => {
+ogAtoms.push(...[...Array(100)].map(() => {
         let maxRad = 100
-        let randRad = Math.random() + maxRad
+        let randRad = Math.random() * 5 + maxRad
         let circPos = Math.random() * 2 * Math.PI
 
         let randX = Math.sin(circPos) * randRad
