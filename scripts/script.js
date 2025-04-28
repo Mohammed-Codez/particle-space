@@ -202,8 +202,8 @@ ogAtoms.push(...[...Array(500)].map(() => {
                 randX,
                 -randY,
                 Math.random() * 9 + 1,
-                Math.sin(circPos) * 20,
-                Math.cos(circPos) * 20,
+                Math.sin(circPos),
+                Math.cos(circPos),
                 colors[2]
         )
 }))
@@ -221,8 +221,8 @@ ogAtoms.push(...[...Array(250)].map(() => {
                 randX,
                 randY,
                 Math.random() * 4 + 1,
-                Math.sin(circPos + Math.PI / 2) * 20,
-                Math.cos(circPos + Math.PI / 2) * 20,
+                Math.sin(circPos + Math.PI / 2) * 2,
+                Math.cos(circPos + Math.PI / 2) * 2,
                 colors[9]
         )
 }))
