@@ -248,7 +248,7 @@ ogAtoms.push(...[...Array(240)].map(() => {
 
 // moon
 ogAtoms.push(...[...Array(100)].map(() => {
-        let maxRad = 20
+        let maxRad = 15
         let randRad = Math.random() * maxRad
         let circPos = Math.random() * 2 * Math.PI
 
@@ -258,9 +258,9 @@ ogAtoms.push(...[...Array(100)].map(() => {
         return new Atom(
                 randX,
                 randY,
-                Math.random() * 4 + 1,
-                Math.cos(circPos + Math.PI / 2),
+                Math.random() * 5 + 1,
                 Math.sin(circPos + Math.PI / 2),
+                Math.cos(circPos + Math.PI / 2),
                 colors[8]
         )
 }))
