@@ -260,7 +260,7 @@ ogAtoms.push(...[...Array(100)].map(() => {
                 randY,
                 Math.random() * 5 + 1,
                 Math.sin(circPos + Math.PI / 2) / 2,
-                Math.cos(circPos + Math.PI / 2) / 2 - 5,
+                Math.cos(circPos + Math.PI / 2) / 2 - 3,
                 colors[8]
         )
 }))
