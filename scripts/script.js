@@ -188,6 +188,7 @@ const colors = [
 
 let ogAtoms = []
 
+// planet
 ogAtoms.push(...[...Array(500)].map(() => {
         let maxRad = 50
         let randRad = Math.random() * maxRad
@@ -204,6 +205,25 @@ ogAtoms.push(...[...Array(500)].map(() => {
                 0,
                 0,
                 colors[2]
+        )
+}))
+
+// ring 1
+ogAtoms.push(...[...Array(500)].map(() => {
+        let maxRad = 50
+        let randRad = Math.random() + maxRad
+        let circPos = Math.random() * 2 * Math.PI
+
+        let randX = Math.sin(circPos) * randRad
+        let randY = Math.cos(circPos) * randRad
+
+        return new Atom(
+                randX,
+                randY,
+                Math.random() * 9 + 1,
+                0,
+                0,
+                colors[9]
         )
 }))
 
