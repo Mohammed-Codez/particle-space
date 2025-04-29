@@ -211,7 +211,7 @@ ogAtoms.push(...[...Array(500)].map(() => {
 // ring 1
 ogAtoms.push(...[...Array(240)].map(() => {
         let maxRad = 350
-        let randRad = Math.random() * 25 + maxRad
+        let randRad = Math.random() * 50 + maxRad
         let circPos = Math.random() * 20 * Math.PI
 
         let randX = Math.sin(circPos) * randRad
@@ -221,16 +221,16 @@ ogAtoms.push(...[...Array(240)].map(() => {
                 randX,
                 randY,
                 Math.random() * 4 + 1,
-                Math.sin(circPos + Math.PI / 2) * 3,
-                Math.cos(circPos + Math.PI / 2) * 3,
+                Math.sin(circPos + Math.PI / 2) * 2,
+                Math.cos(circPos + Math.PI / 2) * 2,
                 colors[9]
         )
 }))
 
 // ring 2
 ogAtoms.push(...[...Array(240)].map(() => {
-        let maxRad = 550
-        let randRad = Math.random() * 25 + maxRad
+        let maxRad = 650
+        let randRad = Math.random() * 50 + maxRad
         let circPos = Math.random() * 20 * Math.PI
 
         let randX = Math.sin(circPos) * randRad
@@ -240,8 +240,8 @@ ogAtoms.push(...[...Array(240)].map(() => {
                 randX,
                 randY,
                 Math.random() * 4 + 1,
-                Math.sin(circPos + Math.PI / 2) * 3,
-                Math.cos(circPos + Math.PI / 2) * 3,
+                Math.sin(circPos + Math.PI / 2) * 2,
+                Math.cos(circPos + Math.PI / 2) * 2,
                 colors[9]
         )
 }))
