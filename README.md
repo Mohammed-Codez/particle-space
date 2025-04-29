@@ -7,6 +7,8 @@ This space simulator uses atoms that are predefined in code as a list. This docu
 
 **NOTE:** I'm just an indie guy who likes making silly projects for fun. It's not meant for research on space as there are unreal circumstances like atoms having a weight of 1 something.
 
+The link to the website is right over [here](https://mohammed-codez.github.io/particle-space/), Not me, just look slightly to the left
+
 ## Versions
 
 - **April 25th Fri, 2025 - v1.0** — Just released
