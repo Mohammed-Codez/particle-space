@@ -6,7 +6,7 @@ let fricConst = parseFloat(document.getElementById("fric-const").value)
 let collRad = parseFloat(document.getElementById("collrad-const").value)
 // NOTE: i think it's best we keep it at one otherwise... o ├───┤ o
 
-const version = "v1.0"
+const version = "v1.0.1"
 
 document.getElementById("title").innerHTML = `Particle Space ${version}`
 
@@ -95,6 +95,31 @@ class Atom {
                 )
                 context.fill()
                 context.stroke()
+
+                // line
+                if (document.getElementById("trail-toggle").checked) {
+                        context.beginPath()
+
+                        let trailMult = parseFloat(document.getElementById("trail-mult").value)
+
+                        context.moveTo(
+                                (this.x - camera.x) * camera.zoom + canvas.width / 2,
+                                (this.y - camera.y) * camera.zoom + canvas.height / 2
+                        )
+
+                        context.lineTo(
+                                (this.x - this.vx * trailMult - camera.x) * camera.zoom + canvas.width / 2,
+                                (this.y - this.vy * trailMult - camera.y) * camera.zoom + canvas.height / 2
+                        )
+
+                        context.strokeStyle = (document.getElementById("draw-type").value == "color") ? this.color : "white"
+                        context.lineWidth = 1
+
+                        context.stroke()
+                }
+
+                // on lines 93, 116, 117, and 120, they exceed my 100-char limit, including tabs 
+                // so im trying to fix the issue later on
         }
 }
 
