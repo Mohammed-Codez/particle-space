@@ -11,7 +11,8 @@ The link to the website is right over [here](https://mohammed-codez.github.io/pa
 
 ## Versions
 
-- **April 25th Fri, 2025 - v1.0** — Just released
+- **April 25th Fri, 2025 - v1.0.0** — Just released
+- **April 30th Wed, 2025 - v1.0.1** — Added the _trail_ toggle alongside a _trail multiplier_ parameter
 
 ## Controls
 
@@ -52,4 +53,8 @@ what do you think you are? an idiot?
     - **magenta** — heavy & moving
 
 - **outline** — Gives a white outline of the atoms to make it easier to see. On by default
+
+- **trail** — Gives a trail tail to show the atom's current velocity. Off by default
+
+- **trail multiplier** — Changes the length of the trail for easier view. 1 by default
 
