@@ -14,9 +14,8 @@ body {
         background-color: #0000ff50;
         z-index: 1;
         top: 0;
-        translate: 1px 1px;
         width: clamp(300px, 25dvw, 400px);
-        height: calc(100dvh - 42px);
+        height: calc(100dvh - 40px);
         padding: 20px;
         overflow-y: auto;
 }
