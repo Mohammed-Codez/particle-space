@@ -317,8 +317,8 @@ setInterval(() => {
                 document.getElementById("sidebar").style.visibility = "hidden"
         }
 
-        canvas.width = window.innerWidth - 2
-        canvas.height = window.innerHeight - 2
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
 
         context.clearRect(0, 0, canvas.width, canvas.height)
 
