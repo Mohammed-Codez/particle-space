@@ -273,7 +273,7 @@ ogAtoms.push(...[...Array(200)].map(() => {
 
 // moon
 ogAtoms.push(...[...Array(100)].map(() => {
-        let maxRad = 19.5
+        let maxRad = 20
         let randRad = Math.random() * maxRad
         let circPos = Math.random() * 2 * Math.PI
 
