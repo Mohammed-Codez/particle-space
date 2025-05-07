@@ -234,7 +234,7 @@ for (let i = 0; i < colors.length; i++) {
 }
 
 ogAtoms.push(new Atom(
-        50,
+        250,
         0,
         1e6,
         0,
