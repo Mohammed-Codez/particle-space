@@ -305,7 +305,7 @@ setInterval(() => {
         }
 
         for (let i = 0; i < atoms.length; i++) {
-                for (let j = i + 1; j < atoms.length; j++) {
+                for (let j = 0; j < atoms.length; j++) {
                         updateVels(atoms[i], atoms[j])
                         // frictionDamp(atoms[i], atoms[j])
                         // TODO: try to fix the dang function
