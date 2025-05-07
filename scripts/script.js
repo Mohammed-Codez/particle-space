@@ -236,7 +236,7 @@ for (let i = 0; i < colors.length; i++) {
 ogAtoms.push(new Atom(
         50,
         0,
-        1000,
+        1e6,
         0,
         0,
         "black"
