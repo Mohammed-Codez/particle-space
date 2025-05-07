@@ -213,82 +213,25 @@ const colors = [
 
 let ogAtoms = []
 
-// planet
-ogAtoms.push(...[...Array(500)].map(() => {
-        let maxRad = 50
-        let randRad = Math.random() * maxRad
-        let circPos = Math.random() * 2 * Math.PI
+for (let i = 0; i < colors.length; i++) {
+        ogAtoms.push(...[...Array(100)].map(() => {
+                let maxRad = 15
+                let randRad = Math.random() * maxRad
+                let circPos = Math.random() * 2 * Math.PI
 
-        let points = 5
-        let randX = (Math.cos(circPos) * (Math.sin(points * circPos) + 4) / 5) * randRad
-        let randY = (Math.sin(circPos) * (Math.sin(points * circPos) + 4) / 5) * randRad
+                let randX = Math.sin(i / 10 * 2 * Math.PI) + Math.sin(circPos) * Math.log(randRad) * maxRad
+                let randY = Math.cos(i / 10 * 2 * Math.PI) + Math.cos(circPos) * Math.log(randRad) * maxRad
 
-        return new Atom(
-                randX,
-                -randY,
-                Math.random() * 9 + 1,
-                -Math.sin(circPos),
-                -Math.cos(circPos),
-                colors[2]
-        )
-}))
-
-// ring 1
-ogAtoms.push(...[...Array(200)].map(() => {
-        let maxRad = 550
-        let randRad = Math.random() * 50 + maxRad
-        let circPos = Math.random() * 20 * Math.PI
-
-        let randX = Math.sin(circPos) * randRad
-        let randY = Math.cos(circPos) * randRad
-
-        return new Atom(
-                randX,
-                randY,
-                Math.random() * 4 + 1,
-                Math.sin(circPos + Math.PI / 2),
-                Math.cos(circPos + Math.PI / 2),
-                colors[9]
-        )
-}))
-
-// ring 2
-ogAtoms.push(...[...Array(200)].map(() => {
-        let maxRad = 1050
-        let randRad = Math.random() * 50 + maxRad
-        let circPos = Math.random() * 20 * Math.PI
-
-        let randX = Math.sin(circPos) * randRad
-        let randY = Math.cos(circPos) * randRad
-
-        return new Atom(
-                randX,
-                randY,
-                Math.random() * 4 + 1,
-                Math.sin(circPos + Math.PI / 2),
-                Math.cos(circPos + Math.PI / 2),
-                colors[9]
-        )
-}))
-
-// moon
-ogAtoms.push(...[...Array(100)].map(() => {
-        let maxRad = 20
-        let randRad = Math.random() * maxRad
-        let circPos = Math.random() * 2 * Math.PI
-
-        let randX = Math.sin(circPos) * randRad + 150
-        let randY = Math.cos(circPos) * randRad
-
-        return new Atom(
-                randX,
-                randY,
-                Math.random() * 3 + 1,
-                Math.sin(circPos + Math.PI / 2) / 3,
-                Math.cos(circPos + Math.PI / 2) / 3 - 2,
-                colors[8]
-        )
-}))
+                return new Atom(
+                        randX,
+                        randY,
+                        Math.random() * 9 + 1,
+                        Math.sin(circPos + Math.PI / 2) * randRad / 5,
+                        Math.cos(circPos + Math.PI / 2) * randRad / 5,
+                        colors[i]
+                )
+        }))
+}
 
 let atoms = ogAtoms
 
