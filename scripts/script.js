@@ -238,7 +238,8 @@ ogAtoms.push(new Atom(
         0,
         1000,
         0,
-        0
+        0,
+        "black"
 ))
 
 let atoms = ogAtoms
