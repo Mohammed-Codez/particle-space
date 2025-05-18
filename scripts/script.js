@@ -233,15 +233,6 @@ for (let i = 0; i < colors.length; i++) {
         }))
 }
 
-ogAtoms.push(new Atom(
-        250,
-        0,
-        1e6,
-        0,
-        0,
-        "black"
-))
-
 let atoms = ogAtoms
 
 // const atoms = [
